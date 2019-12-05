@@ -1,4 +1,4 @@
-package org.lalber.tools.checkstyle;
+package org.lalber.tools.checkstyle.reflect;
 
 import java.net.URL;
 import java.net.URLClassLoader;

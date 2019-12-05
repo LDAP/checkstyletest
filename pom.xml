@@ -49,6 +49,12 @@
             <version>2.6</version>
         </dependency>
         <dependency>
+            <groupId>org.fusesource.jansi</groupId>
+            <artifactId>jansi</artifactId>
+            <version>1.18</version>
+        </dependency>
+        <!-- Needed for checkstyle binaries-->
+        <dependency>
             <groupId>org.antlr</groupId>
             <artifactId>antlr4-runtime</artifactId>
             <version>4.7.2</version>
