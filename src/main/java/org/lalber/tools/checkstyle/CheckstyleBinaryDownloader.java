@@ -16,12 +16,12 @@ import static org.fusesource.jansi.Ansi.ansi;
 public class CheckstyleBinaryDownloader {
 
     private static ResourceBundle res = Resource.getInstance().getBundle();
-    private File csBinarys;
+    private File csBinaries;
     private boolean print;
 
     public CheckstyleBinaryDownloader(String folder, boolean print) {
-        this.csBinarys = new File(folder);
-        csBinarys.mkdirs();
+        this.csBinaries = new File(folder);
+        csBinaries.mkdirs();
         this.print = print;
     }
 
@@ -39,7 +39,7 @@ public class CheckstyleBinaryDownloader {
         int i = 1;
         for (String ver : versionsToCheck) {
             String filename = "checkstyle-" + ver + ".jar";
-            File f = new File(csBinarys, filename);
+            File f = new File(csBinaries, filename);
             if (!f.exists()) {
                 if (print)
                     System.out.print(ansi()

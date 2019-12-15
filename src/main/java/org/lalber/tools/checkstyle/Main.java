@@ -55,7 +55,7 @@ public class Main {
 
     private static File getCheckstyleFile(String[] args) {
         if (args.length != 1 || !new File(args[0]).exists()) {
-            System.out.println("Provide Checkstyle XML-File as argument!");
+            System.err.println(res.getString("nofile"));
             System.exit(1);
         }
         return new File(args[0]);
